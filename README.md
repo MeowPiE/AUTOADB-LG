@@ -1,6 +1,21 @@
 # AUTOADB-G6
-이 툴은 ADB를 이용한 안드로이드 고급 최적화 프로그램입니다.
-이 툴은 G6에 맞춰서 개발했으며, 한국 모델만 현제 지원중입니다.
-통신사 문제로 해외 모델은 삭제권장 앱 명단을 확보하지 못한 상태입니다.
-해외모델은 추후 지원 예정입니다.
-현제 이 프로그램은 andorid 8.0(OREO)에서만 작동합니다.
+## Instruction  
+### THIS IS NOT REQUIRE R O O T.  
+  
+  This program is advanced android Optimization script.  
+  Script is only can use for LG G6.  
+  This repository is frequently updated.  
+  ### it is unstable, so do not use to your phone.  
+  
+# Features
+Permanent delete&restore bloatware  
+resolution change (not dpi)  
+navibar hide&restore  
+carrier mark&volte mark hide  
+activate substatum andromeda  
+#### (keep adding function)
+
+# Thanks to
+DIGIWB(support code)  
+LR(volte uninstaller)  
+prjkt team(andromeda activator)
