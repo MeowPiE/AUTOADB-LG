@@ -13,7 +13,7 @@ resolution change (not dpi)
 navibar hide&restore  
 carrier mark&volte mark hide  
 activate substatum andromeda  
-#### (keep adding function)
+**(keep adding function)**
 
 # Thanks to
 DIGIWB(support code)  
