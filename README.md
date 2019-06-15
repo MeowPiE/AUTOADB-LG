@@ -5,8 +5,8 @@
   This program is advanced android Optimization script.  
   Script is only can use for LG G6.  
   This repository is frequently updated.  
-  **it is unstable, so do not use to your phone.  ** 
-  **the stable version is upload to another thread.  **
+  **it is unstable, so do not use to your phone.**  
+  **the stable version is upload to another thread.**  
 # Features
 Permanent delete&restore bloatware  
 resolution change (not dpi)  
