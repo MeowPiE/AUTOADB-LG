@@ -16,6 +16,6 @@ activate substatum andromeda
 **(keep adding function)**
 
 # Thanks to
-DIGIWB(support code)  
-LR(volte uninstaller)  
-prjkt team(andromeda activator)
+*DIGIWB*(support code)  
+*LR*(volte uninstaller)  
+*prjkt team*(andromeda activator)
