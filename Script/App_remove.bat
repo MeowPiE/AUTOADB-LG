@@ -43,4 +43,4 @@ if "%main2%" == "3" ( for /f %%i in (..\APPL\LGU.txt) do (
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
-goto main
+exit

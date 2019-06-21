@@ -14,4 +14,5 @@ echo 모든 작업은 자동으로 진행됩니다.
 ..\ADB\adb.exe shell cmd overlay enable com.yong.systemui.clean
 
 echo 작업이 완료되었습니다!
-goto 
+pause
+exit

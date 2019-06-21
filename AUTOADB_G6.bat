@@ -3,7 +3,7 @@
 cls
 TITLE AUTOADB v4.0
 echo.
-echo              A-U-T-O A_D_B v4.0
+echo              A-U-T-O A_D_B v4.1
 echo                 FOR LG G6
 echo    coded: bakryun      helper: DIGIWB,LR
 echo          무단 배포및 수정을 금함.
@@ -39,7 +39,7 @@ if %main% GTR 7 (
 
 :_check
 cls
-..\ADB\adb.exe devices -l | find "device product:" >nul
+ADB\adb.exe devices -l | find "device product:" >nul
 if errorlevel 1 (
 echo 연결된 장치가 없습니다. USB 디버깅 상태를 확인하여주십시오.
 echo README.txt 파일을 엽니다. 확인 후, 창을 닫으면 계속 진행됩니다.
@@ -52,12 +52,12 @@ goto main
 
 :_remove
 cls
-Script\App_remove.bat
+start Script\App_remove.bat
 goto main
 
 :_recovery
 cls
-Script\App_recovery.bat
+start Script\App_recovery.bat
 goto main
 
 :_shell
@@ -67,17 +67,17 @@ goto main
 
 :_resolution
 cls
-Script\resolution.bat
+start Script\resolution.bat
 goto main
 
 :_navibar
 cls
-Script\navibar.bat
+start Script\navibar.bat
 goto main
 
 :_chuno
 cls
-Script\chuno.bat
+start Script\chuno.bat
 goto main
 
 :_andromeda
