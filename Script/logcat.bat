@@ -35,3 +35,10 @@ if %main% GTR 5 (
 
 :_help
 cls
+notepad ..\Bin\HELP\logcat.txt
+pasue
+goto main
+
+:_package
+cls
+
