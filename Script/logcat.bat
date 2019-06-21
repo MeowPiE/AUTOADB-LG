@@ -1,5 +1,5 @@
 @echo off
-:_logcat
+:main
 cls
 echo 로그켓 추출 프로그램 V 1.0
 echo ***개발자 전용 프로그램입니다. 잘못들어오셨다면 나가세요***
@@ -41,4 +41,10 @@ goto main
 
 :_package
 cls
+echo 필터링 할 태그를 입력해주세요
+echo 태그는 앱 패키지 명 입니다.
+echo.
+set %%=
+set /p %%= 태그 입력 :
+
 
