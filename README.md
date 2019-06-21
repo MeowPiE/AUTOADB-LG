@@ -12,6 +12,7 @@ Resolution change (not dpi)
 Navibar hide&restore  
 Carrier mark&volte mark hide  
 Activate substatum andromeda  
+logcat control tool (for developers)  
 **(keep adding function)**
 
 # Thanks to

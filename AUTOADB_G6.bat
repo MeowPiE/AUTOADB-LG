@@ -13,7 +13,7 @@ echo * 1.기기 연결 확인   2.자동 시스템 앱 삭제   3.삭제된 시스템 앱 복구   4.쉘
 echo *                                                                                        *                     
 echo *     5.해상도 조절   6.네비바 삭제   7.추노마크+volte 제거   8.substratum 활성화        *
 echo *                                                                                        *       
-echo * 9.           10                                      10.종료                                                                         
+echo * 9.로그켓 추출 10.종료                                                                       
 echo ******************************************************************************************
 echo.
 set main=
@@ -27,8 +27,8 @@ if  "%main%" == "5" goto _resolution
 if  "%main%" == "6" goto _navibar
 if  "%main%" == "7" goto _chuno
 if  "%main%" == "8" goto _andromeda
-if  "%main%" == "9" goto _EXIT
-if  "%main%" == "10" goto 
+if  "%main%" == "9" goto _logcat
+if  "%main%" == "10" goto _EXIT
 if %main% LSS 1 ( 
 	echo 잘못 입력하셨습니다.
 	pause
@@ -65,7 +65,7 @@ goto main
 
 :_shell
 cls
-..\ADB\adb.exe shell
+ADB\adb.exe shell
 goto main
 
 :_resolution
@@ -87,6 +87,10 @@ goto main
 cls
 APP\AndromedaLauncher.exe
 goto main
+
+:_logcat
+cls
+start Script\logcat.bat
 
 :_EXIT
 exit
