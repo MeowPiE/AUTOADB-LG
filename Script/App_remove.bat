@@ -29,15 +29,15 @@ echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
 if "%main2%" == "1" ( for /f %%i in (..\APPL\KT.txt) do (
-	..\ADB\adb.exe shell pm uninstall --user 0 %%i
+	..\Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 if "%main2%" == "2" ( for /f %%i in (..\APPL\SKT.txt) do (
-	..\ADB\adb.exe shell pm uninstall --user 0 %%i
+	..\Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 if "%main2%" == "3" ( for /f %%i in (..\APPL\LGU.txt) do (
-	..\ADB\adb.exe shell pm uninstall --user 0 %%i
+	..\Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 

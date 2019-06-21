@@ -34,7 +34,7 @@ if %main% LSS 1 (
 	pause
 	goto main
 )
-if %main% GTR 7 (
+if %main% GTR 10 (
 	echo 잘못 입력하셨습니다.
 	pause
 	goto main
@@ -42,7 +42,7 @@ if %main% GTR 7 (
 
 :_check
 cls
-ADB\adb.exe devices -l | find "device product:" >nul
+Bin\ADB\adb.exe devices -l | find "device product:" >nul
 if errorlevel 1 (
 echo 연결된 장치가 없습니다. USB 디버깅 상태를 확인하여주십시오.
 echo README.txt 파일을 엽니다. 확인 후, 창을 닫으면 계속 진행됩니다.
@@ -65,7 +65,7 @@ goto main
 
 :_shell
 cls
-ADB\adb.exe shell
+Bin\ADB\adb\ADB\adb.exe shell
 goto main
 
 :_resolution
@@ -85,7 +85,7 @@ goto main
 
 :_andromeda
 cls
-APP\AndromedaLauncher.exe
+Bin\APP\AndromedaLauncher.exe
 goto main
 
 :_logcat

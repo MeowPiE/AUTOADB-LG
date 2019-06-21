@@ -16,6 +16,6 @@ logcat control tool (for developers)
 **(keep adding function)**
 
 # Thanks to
-*DIGIWB* (support code)  
+*DIGIWB* (support code, chuno uninstaller)  
 *LR* (volte uninstaller)  
 *prjkt team* (andromeda activator)

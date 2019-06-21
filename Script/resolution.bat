@@ -26,18 +26,18 @@ cls
 :ChangeResolution
 	echo 해상도 조절중
 	if "%main2%" == "1" (
-	    ..\ADB\adb.exe shell wm size 1440x2880
-	    ..\ADB\adb.exe shell wm density 565
+	    ..\Bin\ADB\adb.exe shell wm size 1440x2880
+	    ..\Bin\ADB\adb.exe shell wm density 565
 	    )
 
 	if "%main2%" == "2" (
-	    ..\ADB\adb.exe shell wm size 1080x2160
-	    ..\ADB\adb.exe shell wm density 424
+	    ..\Bin\ADB\adb.exe shell wm size 1080x2160
+	    ..\Bin\ADB\adb.exe shell wm density 424
 	)
 	
 	if "%main2%" == "3" (
-	    ..\ADB\adb.exe shell wm size 720x1440
-		..\ADB\adb.exe shell wm density 282
+	    ..\Bin\ADB\adb.exe shell wm size 720x1440
+		..\Bin\ADB\adb.exe shell wm density 282
 	)
 )
 

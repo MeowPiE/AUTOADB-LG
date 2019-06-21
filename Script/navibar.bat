@@ -27,19 +27,19 @@ cls
 :ChangeResolution
 	echo Ã³¸®Áß
 	if "%main2%" == "1" (
-	    ..\ADB\adb.exe shell settings put global policy_control immersive.status=*
+	    ..\Bin\ADB\adb.exe shell settings put global policy_control immersive.status=*
 	)
 
 	if "%main2%" == "2" (
-	    ..\ADB\adb.exe shell settings put global policy_control immersive.navigation=*
+	    ..\Bin\ADB\adb.exe shell settings put global policy_control immersive.navigation=*
 	)
 	
 	if "%main2%" == "3" (
-	    ..\ADB\adb.exe shell settings put global policy_control immersive.full=*
+	    ..\Bin\ADB\adb.exe shell settings put global policy_control immersive.full=*
 	)
 
 	if "%main2%" == "4" (
-	    ..\ADB\adb.exe shell settings put global policy_control null*
+	    ..\Bin\ADB\adb.exe shell settings put global policy_control null*
 	)
 )
 
