@@ -3,7 +3,7 @@
 cls
 TITLE AUTOADB v4.0
 echo.
-echo              A-U-T-O A_D_B v4.5
+echo              A-U-T-O A_D_B v4.1
 echo                 FOR LG G6~V50
 echo    coded: bakryun      helper: DIGIWB,LR
 echo          무단 배포및 수정을 금함.
@@ -55,32 +55,32 @@ goto main
 
 :_remove
 cls
-call Script\App_remove.bat
+start Script\App_remove.bat
 goto main
 
 :_recovery
 cls
-call Script\App_recovery.bat
+start Script\App_recovery.bat
 goto main
 
 :_shell
 cls
-Bin\ADB\adb.exe shell
+Bin\ADB\adb\ADB\adb.exe shell
 goto main
 
 :_resolution
 cls
-call Script\resolution.bat
+start Script\resolution.bat
 goto main
 
 :_navibar
 cls
-call Script\navibar.bat
+start Script\navibar.bat
 goto main
 
 :_chuno
 cls
-call Script\chuno.bat
+start Script\chuno.bat
 goto main
 
 :_andromeda
@@ -90,8 +90,7 @@ goto main
 
 :_logcat
 cls
-call Script\logcat.bat
-goto main
+start Script\logcat.bat
 
 :_EXIT
 exit
