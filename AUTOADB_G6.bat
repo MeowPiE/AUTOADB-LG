@@ -1,12 +1,12 @@
 @echo off
 :main
 cls
-TITLE AUTOADB v4.0
+TITLE AUTOADB v4.5
 echo.
-echo              A-U-T-O A_D_B v4.5
-echo                 FOR LG G6~V50
-echo    coded: bakryun      helper: DIGIWB,LR
-echo          무단 배포및 수정을 금함.
+echo                                   A-U-T-O A_D_B v4.5
+echo                                      FOR LG G6~V50
+echo                           coded: bakryun      helper: DIGIWB,LR
+echo                                무단 배포및 수정을 금함.
 echo.
 echo ******************************************************************************************
 echo * 1.기기 연결 확인   2.자동 시스템 앱 삭제   3.삭제된 시스템 앱 복구   4.쉘 커맨드 진입  *

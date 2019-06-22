@@ -1,7 +1,7 @@
 @echo off
 :nav
 cls
-TITLE NAVBAR v1.0
+TITLE NAVBAR v1.1
 echo.
 echo 1.상태바 숨기기
 echo.
@@ -28,19 +28,19 @@ cls
 :ChangeResolution
 	echo 처리중
 	if "%main2%" == "1" (
-	    ..\Bin\ADB\adb.exe shell settings put global policy_control immersive.status=*
+	    Bin\ADB\adb.exe shell settings put global policy_control immersive.status=*
 	)
 
 	if "%main2%" == "2" (
-	    ..\Bin\ADB\adb.exe shell settings put global policy_control immersive.navigation=*
+	    Bin\ADB\adb.exe shell settings put global policy_control immersive.navigation=*
 	)
 	
 	if "%main2%" == "3" (
-	    ..\Bin\ADB\adb.exe shell settings put global policy_control immersive.full=*
+	    Bin\ADB\adb.exe shell settings put global policy_control immersive.full=*
 	)
 
 	if "%main2%" == "4" (
-	    ..\Bin\ADB\adb.exe shell settings put global policy_control null*
+	    Bin\ADB\adb.exe shell settings put global policy_control null*
 	)
 )
 

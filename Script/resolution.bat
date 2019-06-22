@@ -1,7 +1,7 @@
 @echo off
 :_resolution
 cls
-TITLE resolution v 1.0
+TITLE resolution v 1.1
 echo 경고! 이 기능을 사용시 일부 앱은 오작동 할 수 있습니다.
 echo 이 기능을 사용해서 오작동 하더라도 복구는 가능합니다.
 echo.
@@ -27,18 +27,18 @@ cls
 :ChangeResolution
 	echo 해상도 조절중
 	if "%main2%" == "1" (
-	    ..\Bin\ADB\adb.exe shell wm size 1440x2880
-	    ..\Bin\ADB\adb.exe shell wm density 565
+	    Bin\ADB\adb.exe shell wm size 1440x2880
+	    Bin\ADB\adb.exe shell wm density 565
 	    )
 
 	if "%main2%" == "2" (
-	    ..\Bin\ADB\adb.exe shell wm size 1080x2160
-	    ..\Bin\ADB\adb.exe shell wm density 424
+	    Bin\ADB\adb.exe shell wm size 1080x2160
+	    Bin\ADB\adb.exe shell wm density 424
 	)
 	
 	if "%main2%" == "3" (
-	    ..\Bin\ADB\adb.exe shell wm size 720x1440
-		..\Bin\ADB\adb.exe shell wm density 282
+	    Bin\ADB\adb.exe shell wm size 720x1440
+		Bin\ADB\adb.exe shell wm density 282
 	)
 )
 
