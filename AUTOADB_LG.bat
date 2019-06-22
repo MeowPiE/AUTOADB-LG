@@ -3,7 +3,7 @@
 cls
 TITLE AUTOADB v4.5
 echo.
-echo                                   A-U-T-O A_D_B v4.5
+echo                                   A-U-T-O A_D_B v4.6
 echo                                      FOR LG G6~V50
 echo                           coded: bakryun      helper: DIGIWB,LR
 echo                                무단 배포및 수정을 금함.

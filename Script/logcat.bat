@@ -64,6 +64,6 @@ cls
 echo -%filter% -%level% 를 필터링 합니다.
 echo. 나가기는 ctrl+C를 누르시면 됩니다.
 echo.
-..\Bin\ADB\adb.exe logcat -%filter% -%level%
+Bin\ADB\adb.exe shell logcat -%filter% -%level%
 
 :_EXIT
