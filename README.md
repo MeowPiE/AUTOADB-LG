@@ -1,9 +1,9 @@
-# AUTOADB-G6
+# AUTOADB-LG
 ## Instruction  
 ### THIS IS NOT REQUIRE R O O T.  
   
   This program is advanced android Optimization script.  
-  Script is only can use for LG G6.  
+  Script is only can use for LG G6~V50.    
   This repository is frequently updated.  
   **It is unstable, so do not use to your phone.**   
 # Features

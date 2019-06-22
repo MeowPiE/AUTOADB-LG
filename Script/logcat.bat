@@ -44,17 +44,16 @@ cls
 echo 필터링 할 태그를 입력해주세요
 echo 태그는 앱 패키지 명 입니다.
 echo.
-set %%=
-set /p %%= 태그 입력 :
+set /p filter= 태그 입력 :
 cls
 echo 필터링 래밸을 고르세요
 echo V/D/I/W/E/F/S
-set %%%=
-set /p %%%= 래벨 입력 :
+set /p level= 래벨 입력 :
 cls
 echo 입력하신 명령어는
-echo adb logcat -%% -%%% 입니다.
+echo adb logcat -%filter% -%level% 입니다.
 echo 실행하시겠습니까?
+set /p YN= (Y/N)? :
 
-
+if /i "%YN%" == "Y" goto YES
 
