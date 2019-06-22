@@ -65,3 +65,11 @@ echo -%filter% -%level% 를 필터링 합니다.
 echo. 나가기는 ctrl+C를 누르시면 됩니다.
 echo.
 ..\Bin\ADB\adb.exe logcat -%filter% -%level%
+
+pause
+goto main
+
+:_filter
+cls
+echo 필터링 래벨을 선택하세요
+echo V/D/I/W/E/F/S
