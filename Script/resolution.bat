@@ -1,6 +1,7 @@
 @echo off
 :_resolution
 cls
+TITLE resolution v 1.0
 echo 경고! 이 기능을 사용시 일부 앱은 오작동 할 수 있습니다.
 echo 이 기능을 사용해서 오작동 하더라도 복구는 가능합니다.
 echo.

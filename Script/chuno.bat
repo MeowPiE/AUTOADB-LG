@@ -1,6 +1,7 @@
 @echo off
 :_chuno
 cls
+TITLE chuno v 1.0
 echo 추노마크(통신사마크)
 echo volte 마크
 echo 두개를 상태바에서 없에주는 프로그램입니다.

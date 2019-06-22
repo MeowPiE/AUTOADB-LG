@@ -13,6 +13,7 @@ echo.
 echo 4.로그추출+파일저장
 echo.
 echo 5.나가기
+echo.
 set main=
 set /p main=숫자를 입력해주세요 :
 
@@ -56,4 +57,11 @@ echo 실행하시겠습니까?
 set /p YN= (Y/N)? :
 
 if /i "%YN%" == "Y" goto YES
+if /i "%YN%" == "N" goto main
 
+:YES
+cls
+echo -%filter% -%level% 를 필터링 합니다.
+echo. 나가기는 ctrl+C를 누르시면 됩니다.
+echo.
+..\Bin\ADB\adb.exe logcat -%filter% -%level%

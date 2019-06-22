@@ -1,6 +1,7 @@
 @echo off
 :_recovery
 cls
+TITLE recovery v 1.0
 echo 해당 휴대폰의 통신사를 선택해주세요.
 echo 현재 설치된 펌웨어의 통신사를 기준으로합니다.
 echo.
