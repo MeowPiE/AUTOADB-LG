@@ -1,7 +1,7 @@
 @echo off
 :_recovery
 cls
-TITLE recovery v 1.0
+TITLE recovery v 1.1
 echo 해당 휴대폰의 통신사를 선택해주세요.
 echo 현재 설치된 펌웨어의 통신사를 기준으로합니다.
 echo.
@@ -29,15 +29,15 @@ echo 통신사 앱 시스템 앱 가리지 않고 복원이 됩니다.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :recoverapp
-	if "%main2%" == "1" ( for /f %%i in (..\APPL\KT.txt) do (
+	if "%main2%" == "1" ( for /f %%i in (..\Bin\APPL\KT.txt) do (
 		..\Bin\ADB\adb.exe shell cmd package install-existing %%i
 		echo %%i 패키지 처리중
 	))
-	if "%main2%" == "2" ( for /f %%i in (..\APPL\SKT.txt) do (
+	if "%main2%" == "2" ( for /f %%i in (..\Bin\APPL\SKT.txt) do (
 		..\Bin\ADB\adb.exe shell cmd package install-existing %%i
 		echo %%i 패키지 처리중
 	))
-	if "%main2%" == "3" ( for /f %%i in (..\APPL\LGU.txt) do (
+	if "%main2%" == "3" ( for /f %%i in (..\Bin\APPL\LGU.txt) do (
 		..\Bin\ADB\adb.exe shell cmd package install-existing %%i
 		echo %%i 패키지 처리중
 	))
