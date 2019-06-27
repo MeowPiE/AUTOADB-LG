@@ -19,3 +19,7 @@ logcat control tool (for developers)
 *DIGIWB* (support code, chuno uninstaller)  
 *LR* (volte uninstaller)  
 *prjkt team* (andromeda activator)
+
+# TRANSLATER
+I`M finding Translator.  
+if want help, give me email...
