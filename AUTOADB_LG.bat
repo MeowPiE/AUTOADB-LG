@@ -1,11 +1,11 @@
 @echo off
 :main
 cls
-TITLE AUTOADB v4.5
+TITLE AUTOADB v4.6
 echo.
-echo                                   A-U-T-O A_D_B v4.6
+echo                                   A-U-T-O A_D_B v4.7
 echo                                      FOR LG G6~V50
-echo                           coded: bakryun      helper: DIGIWB,LR
+echo                           coded: backryun      helper: DIGIWB,LR
 echo                                무단 배포및 수정을 금함.
 echo.
 echo ******************************************************************************************
@@ -17,7 +17,7 @@ echo * 9.로그켓 추출 10.종료                                                    
 echo ******************************************************************************************
 echo.
 set main=
-set gpfwn/p main=숫자를 입력해주세요 :
+set /p main=숫자를 입력해주세요 :
 
 if  "%main%" == "1" goto _check
 if  "%main%" == "2" goto _remove
@@ -58,7 +58,7 @@ cls
 call Script\App_remove.bat
 goto main
 
-:_recovery
+01:_recovery
 cls
 call Script\App_recovery.bat
 goto main
