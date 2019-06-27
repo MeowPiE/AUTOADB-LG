@@ -1,7 +1,7 @@
 @echo off
 :main
 cls
-TITLE AUTOADB v4.6
+TITLE AUTOADB v4.7
 echo.
 echo                                   A-U-T-O A_D_B v4.7
 echo                                      FOR LG G6~V50
