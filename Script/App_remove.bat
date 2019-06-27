@@ -1,7 +1,7 @@
 @echo off
 :_uninstall
 cls
-TITLE Uninstaller v 2.0
+TITLE Uninstaller v 2.2
 echo 사용중인 모델을 선택해주세요
 echo.
 echo 1.G6 2.G7 3.G8 4.V30
@@ -50,27 +50,28 @@ if %main2% GTR 3 (
 	pause
 	goto _G6
 )
+
 cls
-echo 경고! 이 작업을 진행시 복구방법은 공장초기화만 가능합니다.
 echo 통상적인 쓰래기앱만 제거합니다. 추가로 제거하실꺼면 직접하세요.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
-if "%main2%" == "1" ( for /f %%i in (Bin\APPL\KT_G6.txt) do (
+if "%main2%" == "1" ( for /f %%i in (Bin\APPL\K_G6.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main2%" == "2" ( for /f %%i in (Bin\APPL\SKT_G6.txt) do (
+if "%main2%" == "2" ( for /f %%i in (Bin\APPL\SK_G6.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main2%" == "3" ( for /f %%i in (Bin\APPL\LGU_G6.txt) do (
+if "%main2%" == "3" ( for /f %%i in (Bin\APPL\U_G6.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
+goto main
 
 :_G7
 cls
@@ -101,21 +102,22 @@ echo 통상적인 쓰래기앱만 제거합니다. 추가로 제거하실꺼면 직접하세요.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
-if "%main3%" == "1" ( for /f %%i in (Bin\APPL\KT_G7.txt) do (
+if "%main3%" == "1" ( for /f %%i in (Bin\APPL\K_G7.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main3%" == "2" ( for /f %%i in (Bin\APPL\SKT_G7.txt) do (
+if "%main3%" == "2" ( for /f %%i in (Bin\APPL\SK_G7.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main3%" == "3" ( for /f %%i in (Bin\APPL\LGU_G7.txt) do (
+if "%main3%" == "3" ( for /f %%i in (Bin\APPL\U_G7.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
+goto main
 
 :_G8
 cls
@@ -146,21 +148,22 @@ echo 통상적인 쓰래기앱만 제거합니다. 추가로 제거하실꺼면 직접하세요.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
-if "%main4%" == "1" ( for /f %%i in (Bin\APPL\KT_G8.txt) do (
+if "%main4%" == "1" ( for /f %%i in (Bin\APPL\K_G8.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main4%" == "2" ( for /f %%i in (Bin\APPL\SKT_G8.txt) do (
+if "%main4%" == "2" ( for /f %%i in (Bin\APPL\SK_G8.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main4%" == "3" ( for /f %%i in (Bin\APPL\LGU_G8.txt) do (
+if "%main4%" == "3" ( for /f %%i in (Bin\APPL\U_G8.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
+goto main
 
 :_v30
 cls
@@ -191,21 +194,22 @@ echo 통상적인 쓰래기앱만 제거합니다. 추가로 제거하실꺼면 직접하세요.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
-if "%main5%" == "1" ( for /f %%i in (Bin\APPL\KT_V30.txt) do (
+if "%main5%" == "1" ( for /f %%i in (Bin\APPL\K_V30.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main5%" == "2" ( for /f %%i in (Bin\APPL\SKT_V30.txt) do (
+if "%main5%" == "2" ( for /f %%i in (Bin\APPL\SK_V30.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main5%" == "3" ( for /f %%i in (Bin\APPL\LGU_V30.txt) do (
+if "%main5%" == "3" ( for /f %%i in (Bin\APPL\U_V30.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
+goto main
 
 :_v40
 cls
@@ -236,21 +240,22 @@ echo 통상적인 쓰래기앱만 제거합니다. 추가로 제거하실꺼면 직접하세요.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
-if "%main6%" == "1" ( for /f %%i in (Bin\APPL\KT_V40.txt) do (
+if "%main6%" == "1" ( for /f %%i in (Bin\APPL\K_V40.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main6%" == "2" ( for /f %%i in (Bin\APPL\SKT_V40.txt) do (
+if "%main6%" == "2" ( for /f %%i in (Bin\APPL\SK_V40.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main6%" == "3" ( for /f %%i in (Bin\APPL\LGU_V40.txt) do (
+if "%main6%" == "3" ( for /f %%i in (Bin\APPL\U_V40.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
+goto main
 
 :_v50
 cls
@@ -281,18 +286,19 @@ echo 통상적인 쓰래기앱만 제거합니다. 추가로 제거하실꺼면 직접하세요.
 echo 작업중 프로그램이 종료되면 심각한 오류가 발생합니다!
 
 :removeapp
-if "%main7%" == "1" ( for /f %%i in (Bin\APPL\KT_V50.txt) do (
+if "%main7%" == "1" ( for /f %%i in (Bin\APPL\K_V50.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main7%" == "2" ( for /f %%i in (Bin\APPL\SKT_V50.txt) do (
+if "%main7%" == "2" ( for /f %%i in (Bin\APPL\SK_V50.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
-if "%main7%" == "3" ( for /f %%i in (Bin\APPL\LGU_V50.txt) do (
+if "%main7%" == "3" ( for /f %%i in (Bin\APPL\U_V50.txt) do (
 	Bin\ADB\adb.exe shell pm uninstall --user 0 %%i
 	echo %%i 패키지 처리중
 ))
 
 echo 작업이 완료되었습니다! 아무키나 누르면 초기화면으로 돌아갑니다.
 pause
+goto main
