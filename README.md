@@ -21,5 +21,5 @@ logcat control tool (for developers)
 *prjkt team* (andromeda activator)
 
 # TRANSLATER
-I`M finding Translator.
+I`M finding Translator.  
 if want help, give me email...
