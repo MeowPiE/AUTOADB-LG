@@ -26,7 +26,9 @@ if %main% GTR 3 (
 	goto main
 )
 :_U6
-Bin\ADB\adb.exe push APP\chvo\UX6_r2.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\lgres_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\sysui_hideoperator.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\sysui_hidevolte.apk /storage/emulated/0/Download
 Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX6_r2.apk
 Bin\ADB\adb.exe shell am-start ???????????????
 echo 작업이 완료되었습니다!
