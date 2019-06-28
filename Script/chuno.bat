@@ -2,8 +2,7 @@
 :_chuno
 cls
 TITLE chuno v 2.0
-echo 추노마크(통신사마크)
-echo volte 마크
+echo 추노마크(통신사마크),volte 마크
 echo 두개를 상태바에서 없에주는 프로그램입니다.
 echo.
 echo 1. UX 6.0 (G6,V30)
@@ -31,3 +30,18 @@ Bin\ADB\adb.exe push APP\chvo\UX6_r2.apk /storage/emulated/0/Download
 Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX6_r2.apk
 echo 작업이 완료되었습니다!
 pause
+goto main
+
+:_U7
+Bin\ADB\adb.exe push APP\chvo\UX7_r2.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX7_r2.apk
+echo 작업이 완료되었습니다!
+pause
+goto main
+
+:_U8
+Bin\ADB\adb.exe push APP\chvo\UX8_r2.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX8_r2.apk
+echo 작업이 완료되었습니다!
+pause
+goto main
