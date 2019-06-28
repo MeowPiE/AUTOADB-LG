@@ -85,7 +85,7 @@ goto main
 
 :_andromeda
 cls
-Bin\APP\AndromedaLauncher.exe
+start Bin\APP\AndromedaLauncher.exe
 goto main
 
 :_logcat
