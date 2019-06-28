@@ -26,27 +26,38 @@ if %main% GTR 3 (
 	goto main
 )
 :_U6
-Bin\ADB\adb.exe push APP\chvo\lgres_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push APP\chvo\sysui_hideoperator.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push APP\chvo\sysui_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX6_r2.apk
-Bin\ADB\adb.exe shell am-start ???????????????
+Bin\ADB\adb.exe push APP\chvo\UX6\lgres_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX6\sysui_hideoperator.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX6\sysui_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/lgres_hidevolte.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hideoperator.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hidevolte.apk
 echo 작업이 완료되었습니다!
 pause
 goto main
 
 :_U7
-Bin\ADB\adb.exe push APP\chvo\UX7_r2.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX7_r2.apk
-Bin\ADB\adb.exe shell am-start ???????????????
+Bin\ADB\adb.exe push APP\chvo\UX7\lgres_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX7\sysui_hideoperator.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX7\sysui_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX7\sysui_narrowmargin.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/lgres_hidevolte.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hideoperator.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hidevolte.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_narrowmargin.apk
 echo 작업이 완료되었습니다!
 pause
 goto main
 
 :_U8
-Bin\ADB\adb.exe push APP\chvo\UX8_r2.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/UX8_r2.apk
-Bin\ADB\adb.exe shell am-start ???????????????
+Bin\ADB\adb.exe push APP\chvo\UX8\lgres_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX8\sysui_hideoperator.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX8\sysui_hidevolte.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe push APP\chvo\UX8\sysui_narrowmargin.apk /storage/emulated/0/Download
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/lgres_hidevolte.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hideoperator.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hidevolte.apk
+Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_narrowmargin.apk
 echo 작업이 완료되었습니다!
 pause
 goto main
