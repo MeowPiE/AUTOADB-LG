@@ -62,8 +62,42 @@ if /i "%YN%" == "N" goto main
 :YES
 cls
 echo -%filter% -%level% 를 필터링 합니다.
-echo. 나가기는 ctrl+C를 누르시면 됩니다.
+echo 나가기는 ctrl+C를 누르시면 됩니다.
 echo.
 Bin\ADB\adb.exe shell logcat -%filter% -%level%
 
-:_EXIT
+echo 중단되었습니다.
+pause
+goto main
+
+:_filter
+cls
+echo 로그 필터입니다. 파일저장은 안됩니다.
+echo.
+echo 필터링 래밸을 고르세요.
+echo V/D/I/W/E/F/S
+echo.
+set /p level= 래밸 입력 :
+cls
+echo 입력하신 명령어는
+echo adb logcat -%level% 입니다.
+echo 실행하시겠습니까?
+set /p YN= (Y/N)? :
+
+if /i "%YN%" == "Y" goto YES
+if /i "%YN%" == "N" goto main
+
+:YES
+cls
+echo -%filter% 로 로그를 필터링합니다.
+echo 나가기는 ctrl+C를 누르시면 됩니다.
+echo.
+Bin\ADB\adb.exe shell logcat -%level%
+
+echo 중단되었습니다.
+pause
+goto main
+
+:_filesave
+cls
+echo 로그를 파일로 저장해줍니다
