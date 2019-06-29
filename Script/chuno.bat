@@ -6,7 +6,7 @@ echo 추노마크(통신사마크),volte 마크
 echo 두개를 상태바에서 없에주는 프로그램입니다.
 echo.
 echo 1. UX 6.0 (G6N,V30)
-echo 2. UX 7.0 (G7,V40O)
+echo 2. UX 7.0 (G7,V40)
 echo 3. UX 8.0 (G6P,G8,V30P,V40P,V50)
 echo.
 set main=
