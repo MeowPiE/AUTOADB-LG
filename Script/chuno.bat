@@ -1,7 +1,7 @@
 @echo off
 :_chuno
 cls
-TITLE chuno v 2.0
+TITLE chuno v 2.3
 echo 추노마크(통신사마크),volte 마크
 echo 두개를 상태바에서 없에주는 프로그램입니다.
 echo.
@@ -27,12 +27,9 @@ if %main% GTR 3 (
 )
 :_U6
 cls
-Bin\ADB\adb.exe push Bin\APP\chvo\UX6\lgeres_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX6\sysui_hideoperator.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX6\sysui_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/lgeres_hidevolte.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hideoperator.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hidevolte.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\lgeres_hidevolte.apk 
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\sysui_hideoperator.apk 
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\sysui_hidevolte.apk 
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.lgeres.hidevolte
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hideoperator
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hidevolte
@@ -42,14 +39,10 @@ goto main
 
 :_U7
 cls
-Bin\ADB\adb.exe push Bin\APP\chvo\UX7\lgeres_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX7\sysui_hideoperator.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX7\sysui_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX7\sysui_narrowmargin.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/lgeres_hidevolte.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hideoperator.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hidevolte.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_narrowmargin.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\lgeres_hidevolte.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\sysui_hideoperator.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\sysui_hidevolte.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\sysui_narrowmargin.apk
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.lgeres.hidevolte
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hideoperator
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hidevolte
@@ -60,14 +53,10 @@ goto main
 
 :_U8
 cls
-Bin\ADB\adb.exe push Bin\APP\chvo\UX8\lgeres_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX8\sysui_hideoperator.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX8\sysui_hidevolte.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe push Bin\APP\chvo\UX8\sysui_narrowmargin.apk /storage/emulated/0/Download
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/lgeres_hidevolte.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hideoperator.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_hidevolte.apk
-Bin\ADB\adb.exe shell pm install -r /storage/emulated/0/Download/sysui_narrowmargin.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\lgeres_hidevolte.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\sysui_hideoperator.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\sysui_hidevolte.apk
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\sysui_narrowmargin.apk
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.lgeres.hidevolte
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hideoperator
 Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hidevolte
