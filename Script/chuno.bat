@@ -28,26 +28,29 @@ if %main% GTR 3 (
 :_U6
 cls
 Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\UX6_r2.apk
-Bin\ADB\adb.exe am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
+Bin\ADB\adb.exe shell am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
 echo 작업이 완료되었습니다!
 echo 적용은 폰 보고 직접하세요
+echo.
 pause
 goto main
 
 :_U7
 cls
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\UX6_r3.apk
-Bin\ADB\adb.exe am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\UX7_r3.apk
+Bin\ADB\adb.exe shell am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
 echo 작업이 완료되었습니다!
 echo 적용은 폰 보고 직접하세요
+echo.
 pause
 goto main
 
 :_U8
 cls
 Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\UX8_r3.apk
-Bin\ADB\adb.exe am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
+Bin\ADB\adb.exe shell am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
 echo 작업이 완료되었습니다!
 echo 적용은 폰 보고 직접하세요
+echo.
 pause
 goto main
