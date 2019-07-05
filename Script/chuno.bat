@@ -1,7 +1,7 @@
 @echo off
 :_chuno
 cls
-TITLE chuno v 2.3
+TITLE chuno v 3.0
 echo 추노마크(통신사마크),volte 마크
 echo 두개를 상태바에서 없에주는 프로그램입니다.
 echo.
@@ -27,40 +27,27 @@ if %main% GTR 3 (
 )
 :_U6
 cls
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\lgeres_hidevolte.apk 
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\sysui_hideoperator.apk 
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\sysui_hidevolte.apk 
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.lgeres.hidevolte
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hideoperator
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hidevolte
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX6\UX6_r2.apk
+Bin\ADB\adb.exe am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
 echo 작업이 완료되었습니다!
+echo 적용은 폰 보고 직접하세요
 pause
 goto main
 
 :_U7
 cls
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\lgeres_hidevolte.apk
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\sysui_hideoperator.apk
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\sysui_hidevolte.apk
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\sysui_narrowmargin.apk
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.lgeres.hidevolte
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hideoperator
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hidevolte
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.narrowmargin
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX7\UX6_r3.apk
+Bin\ADB\adb.exe am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
 echo 작업이 완료되었습니다!
+echo 적용은 폰 보고 직접하세요
 pause
 goto main
 
 :_U8
 cls
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\lgeres_hidevolte.apk
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\sysui_hideoperator.apk
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\sysui_hidevolte.apk
-Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\sysui_narrowmargin.apk
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.lgeres.hidevolte
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hideoperator
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.hidevolte
-Bin\ADB\adb.exe shell cmd overlay enable win.limerainne.lgtheme.systemui.narrowmargin
+Bin\ADB\adb.exe install -r Bin\APP\chvo\UX8\UX8_r3.apk
+Bin\ADB\adb.exe am start com.lge.themesquare/com.lge.themesquare.ui.list.ThemeListActivity
 echo 작업이 완료되었습니다!
+echo 적용은 폰 보고 직접하세요
 pause
 goto main
