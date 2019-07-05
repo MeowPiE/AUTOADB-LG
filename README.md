@@ -23,3 +23,6 @@ logcat control tool (for developers)
 # TRANSLATER
 I`M finding Translator.  
 if want help, give me email...
+
+# C code VERSION  
+developing....  
